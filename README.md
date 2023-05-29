@@ -1,10 +1,6 @@
 # NextLevel.studio_test-task
-
-Welcome to NextLevel.studio_test-task! This project is designed to showcase my skills for the test task at NextLevel.studio.
-
 ## Description
-
-The NextLevel.studio_test-task project is a [provide a brief description of the project here]. This project aims to [describe the purpose and goals of the project].
+Welcome to NextLevel.studio_test-task! This project is designed to showcase my skills for the test task at NextLevel.studio.
 
 ## Installation
 
@@ -27,7 +23,7 @@ To get started with the NextLevel.studio_test-task project, follow these steps:
 2. Start dev server:
 `npm run start:dev`
 
-3. Send requests to the server using a tool like Postman and use basic Auth with such credentials as `username: admin` and `password: password`:
+3. Send requests to the server using a tool like Postman and use basic Auth with such credentials as `username: admin` and `password: password`
 
 - Search for users:
 GET http://localhost:3000/users
