@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
 import { BasicAuthMiddleware } from './middleware/basic-auth.middleware';
+import { ResponseMiddleware } from './middleware/response.middleware';
 
 @Module({
   imports: [UserModule],
@@ -11,6 +12,6 @@ import { BasicAuthMiddleware } from './middleware/basic-auth.middleware';
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer.apply(BasicAuthMiddleware).forRoutes('*');
+    consumer.apply(BasicAuthMiddleware, ResponseMiddleware).forRoutes('*');
   }
 }
